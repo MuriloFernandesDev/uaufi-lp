@@ -11,7 +11,7 @@ const NavbarTwoColumns = (props: INavbarProps) => (
    <div className='w-full'>
       <div className='flex flex-wrap justify-between items-center pt-8 w-full max-w-7xl mx-auto'>
          <nav>
-            <ul className='navbar flex items-center font-medium text-xl text-white'>
+            <ul className='nav flex gap-3 items-center font-medium text-xl text-white'>
                {props.children}
             </ul>
          </nav>
@@ -24,11 +24,11 @@ const NavbarTwoColumns = (props: INavbarProps) => (
 
          <style jsx>
             {`
-               .navbar :global(li:not(:first-child)) {
+               .nav :global(li:not(:first-child)) {
                   @apply mt-0;
                }
 
-               .navbar :global(li:not(:last-child)) {
+               .nav :global(li:not(:last-child)) {
                   @apply mr-5;
                }
             `}
