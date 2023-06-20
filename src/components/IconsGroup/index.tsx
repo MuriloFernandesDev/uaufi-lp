@@ -1,10 +1,10 @@
 interface IconsGroupProps {
-   cols: number;
+   cols?: number;
    children: React.ReactNode;
    className?: string;
 }
 
-const IconsGroup = ({ cols, children, className }: IconsGroupProps) => {
+const IconsGroup = ({ children, className }: IconsGroupProps) => {
    return (
       <div className={`grid grid-cols-1 md:grid-cols-3 mx-auto gap-10 ${className}`}>
          {children}
