@@ -5,12 +5,12 @@ import { AiOutlineWifi } from 'react-icons/ai';
 import { BsShieldCheck } from 'react-icons/bs';
 import { GrConnect } from 'react-icons/gr';
 import VideoExemple from '../../public/assets/images/screen.png';
-import { Button } from '../button/Button';
 import IconComponent from '../components/IconComponent';
 import IconsGroup from '../components/IconsGroup';
 import Input from '../components/Input';
-import { VerticalFeatureRow } from '../feature/VerticalFeatureRow';
-import { Section } from '../layout/Section';
+import { Button } from '../components/button/Button';
+import { VerticalFeatureRow } from '../components/feature/VerticalFeatureRow';
+import { Section } from '../components/layout/Section';
 const Carrossel: any = dynamic(() => import('../../src/components/Carrossel'), { ssr: false });
 
 const VerticalFeatures = () => (
