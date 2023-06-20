@@ -20,7 +20,7 @@ const Footer = () => (
             </p>
          </div>
          <div>
-            <span className='footer-title'>Services</span>
+            <span className='footer-title'>Serviços</span>
             <a className='link link-hover'>Branding</a>
             <a className='link link-hover'>Design</a>
             <a className='link link-hover'>Marketing</a>

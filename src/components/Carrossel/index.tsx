@@ -14,11 +14,28 @@ const Carousel = () => {
       autoplaySpeed: 1200,
       cssEase: 'linear',
       swipe: false,
+      arrows: false,
+      responsive: [
+         {
+            breakpoint: 1024,
+            settings: {
+               slidesToShow: 3,
+               autoplaySpeed: 1400,
+            },
+         },
+         {
+            breakpoint: 480,
+            settings: {
+               slidesToShow: 2,
+               autoplaySpeed: 1500,
+            },
+         },
+      ],
    };
 
    return (
-      <div>
-         <Slider {...settings} className='py-4'>
+      <div className='mx-3'>
+         <Slider {...settings}>
             <div className='my-6'>
                <CardLojas image={LogoGoogle} width={150} />
             </div>

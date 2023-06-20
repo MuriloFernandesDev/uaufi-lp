@@ -15,13 +15,12 @@ const Carrossel: any = dynamic(() => import('../../src/components/Carrossel'), {
 
 const VerticalFeatures = () => (
    <Section
-      yPadding='pt-24'
       title='VANTAGEM COMPETITIVA'
       description='Ao adotar nossa tecnologia, você terá um diferencial competitivo em relação aos 
       seus concorrentes.  Nossa solução oferece um alto valor agregado, com informações 
       precisas e em tempo real para serem usadas em qualquer tipo de negócio.'
    >
-      <IconsGroup cols={3} className='my-24'>
+      <IconsGroup cols={3} className='my-20 md:my-24'>
          <IconComponent
             subtitle='Obtenha lucro ou receita 
             a partir do uso ou acesso à rede 
@@ -45,7 +44,7 @@ const VerticalFeatures = () => (
          />
       </IconsGroup>
 
-      <div className='my-24'>
+      <div className='my-20 md:my-24'>
          <Image src={VideoExemple} className='rounded-2xl' layout='responsive' />
       </div>
 
@@ -80,7 +79,6 @@ const VerticalFeatures = () => (
       />
 
       <Section
-         yPadding='py-24'
          title='Nossos parceiros'
          description='Nossa plataforma integrada e segura já conta com inúmeras empresas 
       que confiam em na solução para revolucionar sua experiência de atendimento'
@@ -92,13 +90,6 @@ const VerticalFeatures = () => (
             </Link>
          </div>
       </Section>
-      {/* 
-      <VerticalFeatureRow
-         title='Your title here'
-         description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim.'
-         image='/assets/images/feature3.svg'
-         imageAlt='Third feature alt text'
-      /> */}
    </Section>
 );
 
