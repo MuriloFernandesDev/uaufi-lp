@@ -1,3 +1,6 @@
+import { AiOutlinePhone } from 'react-icons/ai';
+import { BsPinMap } from 'react-icons/bs';
+import { CiMail } from 'react-icons/ci';
 import { Logo } from './Logo';
 
 const Footer = () => (
@@ -6,9 +9,18 @@ const Footer = () => (
          <div>
             <Logo xl />
             <p>
-               ACME Industries Ltd.
-               <br />
-               Providing reliable tech since 1992
+               <div className='flex items-center gap-1 font-medium'>
+                  <AiOutlinePhone className='rotate-90' />
+                  <span>Telefone: (18) 99706-3114 | Suporte 24h (11) 5200-1762</span>
+               </div>
+               <div className='flex items-center gap-1 font-medium'>
+                  <BsPinMap />
+                  <span>Endereço: Rua Pereira Passos, 308 - CEP 16.050-320 - Araçatuba/SP</span>
+               </div>
+               <div className='flex items-center gap-1 font-medium'>
+                  <CiMail />
+                  <span>E-mail: sac@uaufi.com</span>
+               </div>
             </p>
          </div>
          <div>
