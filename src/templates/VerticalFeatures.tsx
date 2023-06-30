@@ -15,6 +15,7 @@ const Carrossel: any = dynamic(() => import('../../src/components/Carrossel'), {
 
 const VerticalFeatures = () => (
    <Section
+      id='vantagem'
       title='VANTAGEM COMPETITIVA'
       description='Ao adotar nossa tecnologia, você terá um diferencial competitivo em relação aos 
       seus concorrentes.  Nossa solução oferece um alto valor agregado, com informações 
@@ -44,11 +45,12 @@ const VerticalFeatures = () => (
          />
       </IconsGroup>
 
-      <div className='my-20 md:my-24'>
+      <div id='entenda' className='my-20 md:my-24'>
          <Image src={VideoExemple} className='rounded-2xl' layout='responsive' />
       </div>
 
       <VerticalFeatureRow
+         id='fidelizar'
          title='Fidelize seus clientes'
          description='Se você está buscando maneiras de aprimorar a experiência dos clientes em locais físicos e se destacar no mercado entre em contato conosco e descubra como podemos te ajudar a se diferenciar!'
          image='/assets/images/macuaufi.png'
@@ -79,6 +81,8 @@ const VerticalFeatures = () => (
       />
 
       <Section
+         id='parceiros'
+         marginBottom='mb-14'
          title='Nossos parceiros'
          description='Nossa plataforma integrada e segura já conta com inúmeras empresas 
       que confiam em na solução para revolucionar sua experiência de atendimento'

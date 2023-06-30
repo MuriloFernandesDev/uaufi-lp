@@ -10,33 +10,23 @@ const Hero = () => (
    <Background image='background.png'>
       <NavbarTwoColumns logo={<Logo xl />}>
          <li>
-            <Link href='https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template'>
-               <a>Home</a>
-            </Link>
+            <a href='#inicio'>Inicio</a>
          </li>
          <li>
-            <Link href='/'>
-               <a>Product</a>
-            </Link>
+            <a href='#vantagem'>Vantagem</a>
          </li>
          <li>
-            <Link href='/'>
-               <a>Pricing</a>
-            </Link>
+            <a href='#entenda'>Entenda</a>
          </li>
          <li>
-            <Link href='/'>
-               <a>About</a>
-            </Link>
+            <a href='#fidelizar'>Fidelizar</a>
          </li>
          <li>
-            <Link href='/'>
-               <a>Contact</a>
-            </Link>
+            <a href='#parceiros'>Parceiros</a>
          </li>
       </NavbarTwoColumns>
 
-      <Section yPadding='py-20'>
+      <Section id='inicio' yPadding='py-20'>
          <HeroOneButton
             title={
                <>

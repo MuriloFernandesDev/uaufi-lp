@@ -16,7 +16,7 @@ const DropDown = ({ children }: DropDownProps) => {
                xmlns='http://www.w3.org/2000/svg'
                fill='none'
                viewBox='0 0 24 24'
-               className='inline-block w-5 h-5 stroke-current'
+               className='inline-block w-5 h-5 stroke-current text-white'
             >
                <path
                   strokeLinecap='round'

@@ -38,7 +38,7 @@ const NavbarTwoColumns = (props: INavbarProps) => {
             </div>
 
             <div className='hidden md:block'>
-               <ul className='flex gap-2 items-center font-medium text-xl text-white'>
+               <ul className='flex gap-6 items-center font-medium text-xl text-white'>
                   {props.children}
                </ul>
             </div>

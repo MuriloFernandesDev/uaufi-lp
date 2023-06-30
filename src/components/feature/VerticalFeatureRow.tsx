@@ -10,6 +10,7 @@ type IVerticalFeatureRowProps = {
    button?: JSX.Element;
    text_end?: boolean;
    text_center?: boolean;
+   id?: string;
 };
 
 const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
@@ -20,7 +21,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
    const router = useRouter();
 
    return (
-      <div className={verticalFeatureClass}>
+      <div id={props.id} className={verticalFeatureClass}>
          <div
             className={`w-full sm:w-1/2 text-center ${props.text_end && 'md:text-end'} ${
                props.text_center && 'md:text-center'
