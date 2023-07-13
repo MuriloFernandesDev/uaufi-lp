@@ -8,7 +8,7 @@ type INavbarProps = {
    children: ReactNode;
 };
 
-const NavbarTwoColumns = (props: INavbarProps) => {
+const NavBar = (props: INavbarProps) => {
    const [isNavbarFixed, setIsNavbarFixed] = useState(false);
 
    useEffect(() => {
@@ -22,12 +22,12 @@ const NavbarTwoColumns = (props: INavbarProps) => {
       return () => {
          window.removeEventListener('scroll', handleScroll);
       };
-   });
+   }, []);
 
    return (
       <div
          className={`w-full transition-all duration-300 ${
-            isNavbarFixed ? 'fixed bg-primary-500' : 'relative bg-transparent'
+            isNavbarFixed ? 'fixed bg-primary' : 'relative bg-transparent'
          } z-20`}
       >
          <div className='navbar flex-row-reverse flex justify-between w-full max-w-7xl p-3 mx-auto'>
@@ -49,4 +49,4 @@ const NavbarTwoColumns = (props: INavbarProps) => {
    );
 };
 
-export { NavbarTwoColumns };
+export { NavBar };

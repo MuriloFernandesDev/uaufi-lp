@@ -3,12 +3,12 @@ import { Background } from '../components/background/Background';
 import { Button } from '../components/button/Button';
 import { HeroOneButton } from '../components/hero/HeroOneButton';
 import { Section } from '../components/layout/Section';
-import { NavbarTwoColumns } from '../components/navigation/NavbarTwoColumns';
+import { NavBar } from '../components/navigation/NavBar';
 import { Logo } from './Logo';
 
 const Hero = () => (
    <Background image='background.png'>
-      <NavbarTwoColumns logo={<Logo xl />}>
+      <NavBar logo={<Logo xl />}>
          <li>
             <a href='#inicio'>Inicio</a>
          </li>
@@ -24,7 +24,7 @@ const Hero = () => (
          <li>
             <a href='#parceiros'>Parceiros</a>
          </li>
-      </NavbarTwoColumns>
+      </NavBar>
 
       <Section id='inicio' yPadding='py-20'>
          <HeroOneButton

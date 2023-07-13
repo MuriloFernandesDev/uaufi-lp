@@ -7,7 +7,6 @@
       "start": "next start"
    },
    "dependencies": {
-      "@types/react-slick": "^0.23.10",
       "classnames": "^2.3.2",
       "daisyui": "^3.1.1",
       "next": "^12.0.9",
@@ -17,11 +16,9 @@
       "react-daisyui": "^3.1.2",
       "react-dom": "^17.0.2",
       "react-icons": "^4.10.1",
-      "react-pose": "^4.0.10",
       "react-slick": "^0.29.0",
       "sass": "^1.63.4",
-      "slick-carousel": "^1.8.1",
-      "swiper": "^9.4.1"
+      "slick-carousel": "^1.8.1"
    },
    "devDependencies": {
       "@next/bundle-analyzer": "^12.0.9",
